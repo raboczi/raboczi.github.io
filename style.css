@@ -1,13 +1,9 @@
-:root {
-  color-scheme: light dark;
-}
+:root { color-scheme: light dark }
 
-h1 {
-  color: blue;
-}
+h1, h2 { color: DimGray }
 
 @media (prefers-color-scheme: dark) {
-  h1 {
-    color: red;
-  }
+  a:link { color: lightblue }
+  a:visited { color: violet }
+  h1, h2 { color: gray }
 }
