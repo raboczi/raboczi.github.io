@@ -7,13 +7,12 @@ au.id.raboczi.cornerstone.test_service.impl
 au.id.raboczi.cornerstone.test_service.rest
 au.id.raboczi.cornerstone.test_service.shell
 au.id.raboczi.cornerstone.test_service.zk
-au.id.raboczi.cornerstone.user_service
-au.id.raboczi.cornerstone.user_service.impl
-au.id.raboczi.cornerstone.user_service.zk
 au.id.raboczi.cornerstone.useradmin
+au.id.raboczi.cornerstone.useradmin.zk
 au.id.raboczi.cornerstone.zk
 au.id.raboczi.cornerstone.zk.event.impl
 au.id.raboczi.cornerstone.zk.main_war
 au.id.raboczi.cornerstone.zk.menubar
+au.id.raboczi.cornerstone.zk.menuitem.login
 au.id.raboczi.cornerstone.zk.menuitem.theme
 au.id.raboczi.cornerstone.zk.util

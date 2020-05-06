@@ -1,9 +1,16 @@
-:root { color-scheme: light dark }
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&display=swap');
 
-h1, h2 { color: DimGray }
+:root {
+  color-scheme: light dark;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  color: #0093F9;  /* Primary color from the Iceblue/Montana palette */
+  font-family: Comfortaa, sans-serif;
+}
 
 @media (prefers-color-scheme: dark) {
   a:link { color: lightblue }
   a:visited { color: violet }
-  h1, h2 { color: gray }
 }
