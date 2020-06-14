@@ -1,5 +1,7 @@
 au.id.raboczi.cornerstone
 au.id.raboczi.cornerstone.apple
+au.id.raboczi.cornerstone.condpermadmin
+au.id.raboczi.cornerstone.condpermadmin_conditions
 au.id.raboczi.cornerstone.impl
 au.id.raboczi.cornerstone.security_aspect
 au.id.raboczi.cornerstone.test_service
@@ -9,6 +11,8 @@ au.id.raboczi.cornerstone.test_service.shell
 au.id.raboczi.cornerstone.test_service.zk
 au.id.raboczi.cornerstone.useradmin
 au.id.raboczi.cornerstone.useradmin.zk
+au.id.raboczi.cornerstone.util
+au.id.raboczi.cornerstone.wicket
 au.id.raboczi.cornerstone.zk
 au.id.raboczi.cornerstone.zk.event.impl
 au.id.raboczi.cornerstone.zk.main_war
@@ -16,3 +20,4 @@ au.id.raboczi.cornerstone.zk.menubar
 au.id.raboczi.cornerstone.zk.menuitem.login
 au.id.raboczi.cornerstone.zk.menuitem.theme
 au.id.raboczi.cornerstone.zk.util
+org.zkoss.theme.circadian
