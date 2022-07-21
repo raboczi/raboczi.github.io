@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preload" as="image" href="p-kethira.jpg"/>
+  <style>
+    body { margin: 0 }
+    #imageurl { position: fixed; top: 1ex; left: 1ex }
+  </style>
+  <script src="https://unpkg.com/globe.gl"></script>
+</head>
+
+<body>
+<div id="globeViz"></div>
+<select id="imageurl" onchange="globe.globeImageUrl(document.getElementById('imageurl').value)">
+  <option value="kethira.jpg" selected="selected">Canon</option>
+  <option value="p-kethira.jpg">Corrected</option>
+</select>
+
+<script>
+  const globe = Globe()
+    .globeImageUrl('kethira.jpg')
+    .backgroundImageUrl('http://unpkg.com/three-globe/example/img/night-sky.png')
+    (document.getElementById('globeViz'))
+</script>
+</body>
