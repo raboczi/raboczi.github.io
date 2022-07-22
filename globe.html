@@ -12,12 +12,12 @@
 <select id="imageurl" onchange="globe.globeImageUrl(document.getElementById('imageurl').value)">
   <option value="kethira.jpg" selected="selected">Canon</option>
   <option value="p-kethira.jpg">Corrected</option>
+  <option value="equirectangular.jpg">Equirectangular</option>
 </select>
 
 <script>
-  const globe = Globe()
-    .globeImageUrl('kethira.jpg')
-    .backgroundImageUrl('http://unpkg.com/three-globe/example/img/night-sky.png')
-    (document.getElementById('globeViz'))
+  const globe = Globe()(document.getElementById('globeViz'))
+  globe.globeImageUrl('kethira.jpg')
+       .backgroundImageUrl('http://unpkg.com/three-globe/example/img/night-sky.png')
 </script>
 </body>
