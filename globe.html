@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <meta charset="utf-8">
   <style>
     body { margin: 0 }
     #imageurl { position: fixed; top: 1ex; left: 1ex }
@@ -14,6 +15,7 @@
   <option value="p-kethira.jpg">Corrected</option>
   <option value="equirectangular.jpg">Equirectangular</option>
   <option value="pokep-proposal.jpg">Pokep proposal</option>
+  <option value="sebkha-proposal.jpg">Sebkha proposal</option>
 </select>
 
 <script>
@@ -25,6 +27,7 @@
   case 'p-kethira': imageurl.value = 'p-kethira.jpg'; break;
   case 'equirectangular': imageurl.value = 'equirectangular.jpg'; break;
   case 'pokep-proposal': imageurl.value = 'pokep-proposal.jpg'; break;
+  case 'sebkha-proposal': imageurl.value = 'sebkha-proposal.jpg'; break;
   }
   globe.globeImageUrl(document.getElementById('imageurl').value);
 </script>
