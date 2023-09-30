@@ -13,11 +13,18 @@
   <option value="kethira.jpg" selected="selected">Canon</option>
   <option value="p-kethira.jpg">Corrected</option>
   <option value="equirectangular.jpg">Equirectangular</option>
+  <option value="pokep-proposal.jpg">Pokep proposal</option>
 </select>
 
 <script>
   const globe = Globe()(document.getElementById('globeViz'))
   globe.globeImageUrl('kethira.jpg')
        .backgroundImageUrl('http://unpkg.com/three-globe/example/img/night-sky.png')
+  const url = new URL(window.location.toLocaleString())
+  switch (url.searchParams.get('projection')) {
+  case 'pokep-proposal':
+    globe.globeImageUrl('pokep-proposal.jpg')
+    break;
+  }
 </script>
 </body>
