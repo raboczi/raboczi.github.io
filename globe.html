@@ -16,18 +16,20 @@
   <option value="equirectangular.jpg">Equirectangular</option>
   <option value="pokep-proposal.jpg">Pokep proposal</option>
   <option value="sebkha-proposal.jpg">Sebkha proposal</option>
+  <option value="kp.jpg">Kelestia Productions</option>
 </select>
 
 <script>
   const globe = Globe()(document.getElementById('globeViz'))
   globe.globeImageUrl('kethira.jpg')
-       .backgroundImageUrl('http://unpkg.com/three-globe/example/img/night-sky.png')
+       .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
   const url = new URL(window.location.toLocaleString())
   switch (url.searchParams.get('projection')) {
   case 'p-kethira': imageurl.value = 'p-kethira.jpg'; break;
   case 'equirectangular': imageurl.value = 'equirectangular.jpg'; break;
   case 'pokep-proposal': imageurl.value = 'pokep-proposal.jpg'; break;
   case 'sebkha-proposal': imageurl.value = 'sebkha-proposal.jpg'; break;
+  case 'kp': imageurl.value = 'kp.jpg'; break;
   }
   globe.globeImageUrl(document.getElementById('imageurl').value);
 </script>
